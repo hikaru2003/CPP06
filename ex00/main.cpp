@@ -6,7 +6,7 @@
 /*   By: hikaru <hikaru@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 11:51:06 by hikaru            #+#    #+#             */
-/*   Updated: 2023/11/19 15:24:24 by hikaru           ###   ########.fr       */
+/*   Updated: 2024/02/03 12:41:55 by hikaru           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,11 @@
 
 int	main(int argc, char **argv)
 {
-	ScalarConverter	conv;
 	if (argc != 2)
 	{
 		std::cerr << "Error" << std::endl;
 		return 1;
 	}
-	conv.convert(argv[1]);
+	ScalarConverter::convert(argv[1]);
 	return 0;
 }
